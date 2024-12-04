@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root {
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+
+    --cor-fundo: rgb(12, 12, 12);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor-fundo)
+}
+
+header {
+    background-color: var(--cor-fundo);
+    height: 100px;
+}
+
+header > h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 1px 1px white;
+    padding: 40px 0px 0px 0px;
+}
+
+nav {
+    background-color: var(--cor-fundo);
+    padding: 12px;
+    border-bottom: 1px solid white;
+    box-shadow: 1px 3px 5px black;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+}
+
+nav > a:hover {
+    color: black;
+    background-color: white;
+    transition-duration: 0.5s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: var(--cor-fundo);
+    color: white;
+    padding: 20px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main > article > div > p {
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 17px;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+main > article > div > h1 {
+    text-shadow: 1px 1px 1px white;
+    font-size: 2.5em;
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+main > article > div > h2 {
+    text-shadow: 1px 1px 1px white;
+    font-size: 2em;
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+main > article > div {
+    padding: 20px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+main > article > div#ultima {
+    margin-bottom: 0px;
+}
+
+footer {
+    background-color: var(--cor-fundo);
+    padding: 2px;
+    border-top: 1px solid white;
+}
+
+footer > p {
+    color: white;   
+    text-align: center; 
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: blue;
+    text-decoration-color: blue;
+}
