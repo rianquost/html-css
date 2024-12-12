@@ -6,26 +6,30 @@
     <title>Desafio</title>
     <style>
         body {
+            position: relative;
             height: 98vh;
+            background: url(imagens/espaco.jpg);
+            background-size: cover;
         }
-
-        section#container {
-            background-image: url(imagens/espaco.jpg);
+        main {
+            height: 600px;
+            width: 600px;
+            position: absolute;
+            background: url(imagens/astronauta.png);
             background-position: center center;
-        }
+            background-size: contain;
+            background-repeat: no-repeat;
 
-        article#conteudo {
-            background-image: url(imagens/astronauta.png);
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <main>
-        <section id="container">
-            <article id="conteudo">
 
-            </article>
-        </section>
-    </main>      
+    </main>
 </body>
 </html>
